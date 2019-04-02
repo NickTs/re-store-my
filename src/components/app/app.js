@@ -1,7 +1,8 @@
 import React from 'react';
-import {Switch, Route} from 'react-router-dom';
-import {HomePage, CartPage} from '../pages'
-import './app.css'
+import { Route, Switch } from 'react-router-dom';
+import { HomePage, CartPage } from '../pages';
+
+import './app.css';
 
 const App = () => {
   return (
@@ -10,13 +11,13 @@ const App = () => {
         path="/"
         component={HomePage}
         exact />
+
       <Route
         path="/cart"
-        component={CartPage} />
+        component={CartPage}
+        />
     </Switch>
-
-  )
+  );
 };
 
 export default App;
-

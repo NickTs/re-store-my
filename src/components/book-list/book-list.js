@@ -22,7 +22,7 @@ class BookList extends Component {
   render() {
     const { books } = this.props;
     return (
-      <ul className="book-list">
+      <ul>
         {
           books.map((book) => {
             return (
